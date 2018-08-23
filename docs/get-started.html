@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Sebelum Memulai · Tangituru Fintech</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Sebelum memulai menggunakan project ini pastikan anda sudah membaca peraturan cara akses API di project ini"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Sebelum Memulai · Tangituru Fintech"/><meta property="og:type" content="website"/><meta property="og:url" content="https://fintech.tangituru.com/index.html"/><meta property="og:description" content="Sebelum memulai menggunakan project ini pastikan anda sudah membaca peraturan cara akses API di project ini"/><meta property="og:image" content="https://fintech.tangituru.com/img/tangituru.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://fintech.tangituru.com/img/tangituru.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://fintech.tangituru.com/blog/atom.xml" title="Tangituru Fintech Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://fintech.tangituru.com/blog/feed.xml" title="Tangituru Fintech Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">Tangituru Fintech</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/get-started.html" target="_self">Docs</a></li><li class=""><a href="/en/help.html" target="_self">Help</a></li><li class=""><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Tangituru Fintech</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Tangituru Fintech</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/get-started.html">Sebelum Memulai</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Basic</h3><ul><li class="navListItem"><a class="navItem" href="/docs/client-info.html">Check Client Info</a></li><li class="navListItem"><a class="navItem" href="/docs/balance.html">Saldo</a></li><li class="navListItem"><a class="navItem" href="/docs/list-product.html">List Products PPOB</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API Transaksi</h3><ul><li class="navListItem"><a class="navItem" href="/docs/trx-pulsa.html">Transaksi Pulsa</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Sebelum Memulai</h1></header><article><div><span><p>Sebelum memulai menggunakan project ini pastikan anda sudah membaca peraturan cara akses API di project ini</p>
+<h2><a class="anchor" aria-hidden="true" id="client-id"></a><a href="#client-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client ID</h2>
+<p>Client ID adalah berupa huruf2 random unik yang di generate dari system kami. anda bisa membuatnya di halaman dashboard anda</p>
+<h2><a class="anchor" aria-hidden="true" id="end-point"></a><a href="#end-point" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>END POINT</h2>
+<p>Aplikasi ini mempunya environment end point atau biasa di sebut host, yaitu</p>
+<pre><code class="hljs">http:<span class="hljs-regexp">//</span>fintech.tangituru.com<span class="hljs-regexp">/api/</span>v1
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="signature"></a><a href="#signature" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Signature</h2>
+<p>Sebagai Keamanan Kami menggunakan Signature ini untuk kunci yang akan anda kirimkan ke End Point Kami.</p>
+<h3><a class="anchor" aria-hidden="true" id="algoritma-signature"></a><a href="#algoritma-signature" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Algoritma Signature</h3>
+<pre><code class="hljs css languages- js">-- request_method : GET / POST
+-- client_id : YOUR_CLIENT_ID
+-- url : URL_ENDPOINT
+-- request_body : []
+-- request_encrypted : LOWERCASE(hash256(request_body))
+
+<span class="hljs-comment">// This is for generate signature</span>
+hmac256(UPPER(request_method):url:request_encrypted, client_id)
+
+<span class="hljs-comment">// This is example</span>
+hmac256(<span class="hljs-string">'GET:/api/client/info:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945'</span>, <span class="hljs-string">'Njg2NTZjNmM2Zg=='</span>)
+
+<span class="hljs-comment">// Output</span>
+ac7b190ebbb8bceaa927713bb4d39575706d9037b6cc3c140dae2b699b0c7982
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="penjelasan-algoritma-signature"></a><a href="#penjelasan-algoritma-signature" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Penjelasan Algoritma Signature</h3>
+<ul>
+<li>request_metod : metode request yang akan anda gunakan untuk request ke server kami</li>
+<li>client_id : client id aplikasi anda yang di dapat dari halaman dashboard</li>
+<li>url : url api yang ingin di akses dari aplikasi anda</li>
+<li>request_body : data yang akan di kirimkan ke server kami, jika data kosong bisa di masukkan []</li>
+<li>request_encrypted : request_body harus di encrypt menggunakan algoritma hash256 dan lowerCase</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="authentication"></a><a href="#authentication" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authentication</h2>
+<p>Semua URL API kami memerlukan Authentication</p>
+<h3><a class="anchor" aria-hidden="true" id="algoritma-authentication"></a><a href="#algoritma-authentication" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Algoritma Authentication</h3>
+<p>semua data authentication harus dikirim melalui headers</p>
+<pre><code class="hljs">curl -v -H <span class="hljs-string">"Accept: application/json"</span> \
+        -H <span class="hljs-string">"Content-type: application/json"</span> \
+        -H <span class="hljs-string">"Signature: 0o6Lg.....RSFg="</span> \
+        -H <span class="hljs-string">"client_id: Njg2NTZjNmM2Zg=="</span> \
+        -X <span class="hljs-string">"<span class="hljs-keyword">GET</span>"</span> \
+        http://fintech.tangituru.com/api/client/info
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docs/client-info.html">Check Client Info →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#client-id">Client ID</a></li><li><a href="#end-point">END POINT</a></li><li><a href="#signature">Signature</a><ul class="toc-headings"><li><a href="#algoritma-signature">Algoritma Signature</a></li><li><a href="#penjelasan-algoritma-signature">Penjelasan Algoritma Signature</a></li></ul></li><li><a href="#authentication">Authentication</a><ul class="toc-headings"><li><a href="#algoritma-authentication">Algoritma Authentication</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/favicon.png" alt="Tangituru Fintech" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Tangituru</section></footer></div></body></html>
